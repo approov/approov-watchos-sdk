@@ -15,4 +15,5 @@ Pod::Spec.new do |spec|
     'EXCLUDED_ARCHS[sdk=watchos*]' => 'armv7k i386',
     'VALID_ARCHS' => 'arm64_32 x86_64'
   }
+  spec.watchos.vendored_frameworks = 'Approov'
 end
