@@ -11,6 +11,10 @@ Pod::Spec.new do |spec|
   spec.platform     = :watchos, '7.3'
   spec.watchos.deployment_target = '7.3'
   spec.preserve_paths = 'Approov.xcframework'
-  spec.exclude_archs = 'i386 armv7k arm64'
+   # Exclude architectures for watchOS and watchOS simulator
+  spec.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=watchos*]' => 'i386 armv7k arm64',
+    'EXCLUDED_ARCHS[sdk=watchsimulator*]' => 'i386 armv7k arm64'
+  }'
   spec.watchos.vendored_frameworks = 'Approov'
 end
