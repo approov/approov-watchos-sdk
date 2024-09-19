@@ -15,6 +15,6 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=watchos*]' => 'i386 armv7k arm64',
     'EXCLUDED_ARCHS[sdk=watchsimulator*]' => 'i386 armv7k arm64'
-  }'
+  }
   spec.watchos.vendored_frameworks = 'Approov'
 end
