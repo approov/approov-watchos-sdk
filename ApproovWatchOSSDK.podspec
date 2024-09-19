@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-  spec.name         = 'ApproovWatchOSSDK'
+  spec.name         = 'Approov'
   spec.version      = '3.2.0'
   spec.summary      = 'Approov SDK for watchOS'
   spec.description  = 'A detailed description of the Approov SDK for watchOS.'
